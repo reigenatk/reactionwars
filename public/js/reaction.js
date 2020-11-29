@@ -158,6 +158,7 @@ socket.on('announcement', ({text}) => {
 // called when a player leaves from an unfinished game. Resets the UI for the player that is still in the lobby
 // for another game to start, should another user join in
 socket.on("resetGame", () => {
+  roundIsRunning = false;
   ResetUIForNewRound();
   // clear P1 score, P1 times, P2 score, P2 times, P1 avgtime P2 avgtime
   $('#player1_score').text(0);
