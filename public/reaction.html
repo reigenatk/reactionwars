@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Reaction Wars</title>
+    <link rel="icon" href="/img/sadbjerg.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Ne ue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/reaction.css">
+
+</head>
+
+<body>
+
+    <div id="announcements"></div>
+
+    <p id="github">Made by ReigenATK <a href="https://github.com/reigenatk"><img src="/img/gh.png"></a></p>
+
+    <div class="title">
+        <img src="/img/lightning.png">
+        <h1>Reaction Wars</h1>
+        <img src="/img/mcqueen.png">
+        <p id="instructions">Instructions: The box will turn green- first user to react gets a point. First to ten
+            points, wins!</p>
+        <p id="funfact">Fun fact, the average human reaction time is 215 ms! (But latency
+            can add anywhere from 10-100ms)</p>
+    </div>
+
+    <div id="rectangle" class="backgroundgrey">
+        <p id="rectangle-messages">Welcome to Reaction Wars! Please ready up to start the round</p>
+    </div>
+
+    <div class="players">
+        <div class="player1">
+            <h2 id="player1_score">0</h2>
+            <h3 class="red" id="player1_readystate">Not Ready</h3>
+            <h1 id="player1_username">Waiting For Player...</h1>
+            <button id="player1_readybutton" type="button" onclick="player1Ready()"
+                class="btn btn-success">Ready</button>
+            <button id="player1_reactbutton" type="button" onclick="player1React()" class="btn btn-primary"
+                disabled>React</button>
+            <h2 class="times">Times</h2>
+            <ol id="player1_times"></ol>
+            <h2 id="player1_average">Average: 0 ms</h2>
+        </div>
+
+        <div class="vl"></div>
+        <div class="player2">
+            <h2 id="player2_score">0</h2>
+            <h3 class="red" id="player2_readystate">Not Ready</h3>
+            <h1 id="player2_username">Waiting For Player...</h1>
+            <button id="player2_readybutton" type="button" onclick="player2Ready()"
+                class="btn btn-success">Ready</button>
+            <button id="player2_reactbutton" type="button" onclick="player2React()" class="btn btn-primary"
+                disabled>React</button>
+            <h2 class="times">Times</h2>
+            <ol id="player2_times"></ol>
+            <h2 id="player2_average">Average: 0 ms</h2>
+        </div>
+
+    </div>
+
+
+
+    <!-- templates -->
+    <script id="username-template" type="text/html">
+        <p>{username}</p>
+    </script>
+
+    <script id="announcement-template" type="text/html">
+        <div id = "{{div_id}}">
+            <!-- mustache library used here -->
+            <p>{{text}}</p> 
+        </div>
+    </script>
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script src="/js/reaction.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+#announcements p{
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    width: 200px;
+    height: 50px;
+    color: pink;
+    background-color: green;
+}
+
+#announcements {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#rectangle {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rectangle-messages {
+    font-size: 50px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.backgroundgreen {
+    background: green;
+}
+
+.backgroundgrey {
+    background: grey;
+}
+
+.backgroundblue {
+    background: blue;
+}
+
+/* concerning the players */
+.players {
+    display: flex;
+    justify-content: center;
+    background-color: #ADD8E6;
+}
+
+
+.player1 {
+    margin: 0px 50px 0px 50px;
+    width: 1000px;
+    height: 300px;
+    position: relative;
+}
+
+.player1 h1 {
+    font-size: 40px;
+    margin: 30px 0px 0px 0px;
+    font-family: 'Goldman';
+}
+
+.player2 h1 {
+    font-size: 40px;
+    margin: 30px 0px 0px 0px;
+    font-family: 'Goldman';
+}
+
+.player1 button {
+    margin: 50px 50px;
+    width: 100px;
+    height: 75px;
+}
+
+.player2 button {
+    margin: 50px 50px;
+    width: 100px;
+    height: 75px;
+}
+
+.player2 {
+    margin: 0px 50px 0px 50px;
+    width: 1000px;
+    height: 300px;
+    position: relative;
+}
+
+.players .times {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #ff00ff
+}
+
+.players ol {
+    position: absolute;
+    right: 15px;
+    top: 75px;
+}
+
+#player1_score {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-family: 'Audiowide';
+    font-size: 40px;
+}
+
+#player2_score {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-family: 'Audiowide';
+    font-size: 40px;
+}
+
+#player1_average {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: yellow;
+}
+
+#player2_average {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: yellow;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+}
+
+#instructions {
+    margin: 30px 0px 30px 0px;
+    font-size: 30px;
+    color: white;
+}
+
+#funfact {
+    color: pink;
+    font-size: 20px;
+    margin: 20px 0px 20px 0px;
+}
+
+.title h1 {
+    display: inline-block;
+    color: yellow;
+    font-size: 60px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.title img {
+    display: inline-block;
+    margin: 20 auto;
+    width: 150px;
+}
+
+.vl {
+    border-left: 6px solid green;
+    height: 320px;
+  }
+
+#github {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    margin-left: 20px;
+}
+
+#github img {
+    margin-left: 20px;
+    width: 50px;
+}

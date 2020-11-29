@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Reaction Wars</title>
+    <link rel="icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="centered-form">
+        <div class="centered-form__box">
+            <h1>Join Game</h1>
+            <form action="/reaction.html">
+                <label>Choose a username:</label>
+                <input type="text" name="username" placeholder="insert username" requried autocomplete="off">
+                <label>Room name:</label>
+                <input type="text" name='room' placeholder='insert room' required autocomplete="off">
+                <!-- An experiment 
+                <label>Chose your color:</label>
+                <input type="hidden" name="color" id="color">
+                <div class="colors">
+                    <button type="button" class="buttonround buttonred" name="red" data-value="red"></button>
+                    <button type="button" class="buttonround buttonblue" name="blue" data-value="blue"></button>
+                    <button type="button" class="buttonround buttongreen" name="green" data-value="green"></button>
+                    <button type="button" class="buttonround buttonyellow" name="yellow" data-value="yellow"></button>
+                </div> -->
+                <button class="submitbutton">Join</button>
+            </form>
+        </div>
+        <a href="https://info.flagcounter.com/ppzr"><img
+                src="https://s11.flagcounter.com/count2/ppzr/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/"
+                alt="Flag Counter" border="0"></a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('.buttonround').click(function (e) {
+            console.log($(this).data('value'));
+            $('.colors button').removeClass('buttonselected');
+            $('#color').val($(this).data('value'));
+            $(this).addClass('buttonselected')
+        });
+    </script>
+
+
+</body>
+
+</html>
