@@ -12,4 +12,4 @@ To play, simply enter a username and a room, if the room doesn't exist then it w
 
  Please enjoy and let me know if there are any bugs!
  
- ![alt text](badmeme.png)
+ ![alt text](badmeme.jpg)
