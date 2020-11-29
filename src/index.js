@@ -106,7 +106,7 @@ io.on('connection', (socket) => {
 
         io.to(userdata.room).emit("announcement", {text: getPlayerOne(userdata.room).username + " is ready!"})
         readyPlayer(id);
-        socket.broadcast.to(userdata.room).emit('p1isready');
+        io.to(userdata.room).emit('p1isready');
         if (AreBothPlayersReady(userdata.room)) {
             // start round
             timeToReact = (Math.random() * 10) + 3; // time between 3 and 13 sec
@@ -131,7 +131,7 @@ io.on('connection', (socket) => {
 
         io.to(userdata.room).emit("announcement", {text: getPlayerTwo(userdata.room).username + " is ready!"})
         readyPlayer(id);
-        socket.broadcast.to(userdata.room).emit('p2isready');
+        io.to(userdata.room).emit('p2isready');
         if (AreBothPlayersReady(userdata.room)) {
             // start round
             timeToReact = (Math.random() * 10) + 3; // time between 3 and 13 sec
