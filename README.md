@@ -1,5 +1,5 @@
 # reactionwars
-A 1v1 reaction game
+A 1v1 reaction game in SocketIO
 
 Have you ever wondered how fast your reaction time was? Better yet, have you ever wondered how it stacks up against others? Perhaps a friend of yours? Well look no further.
 By going to [Reaction Wars](https://reactionwarsv1.herokuapp.com/) you can fight your friend in an epic 1v1 reaction time battle. Figure out who has the faster
@@ -12,4 +12,10 @@ To play, simply enter a username and a room, if the room doesn't exist then it w
 
  Please enjoy and let me know if there are any bugs!
  
- ![alt text](badmeme.jpg)
+A user joins the lobby...
+
+![image](https://user-images.githubusercontent.com/69275171/119087083-216a1780-b9cc-11eb-8167-2fb542c067dd.png)
+<br>
+A round finishes
+
+![image](https://user-images.githubusercontent.com/69275171/119087137-43fc3080-b9cc-11eb-9e63-1acf80e6bb77.png)
